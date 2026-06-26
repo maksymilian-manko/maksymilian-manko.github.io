@@ -258,7 +258,7 @@
             </svg>
             <span style="font-size:0.65rem; color:var(--muted); text-align:center; line-height:1.4;">
               Add your photo<br>
-              <code style="font-size:0.6rem;">&lt;img src="photo.jpg"&gt;</code>
+              <code style="font-size:0.6rem;">&lt;img src="Profile_final.jpg"&gt;</code>
             </span>
           </div>
         </div>
@@ -735,7 +735,7 @@
     document.getElementById(id).classList.add('active');
     btn.classList.add('active');
   }
-  const img = document.getElementById('photoImg');
+  const img = document.getElementById('photoImg').src = 'Profile_final.jpg';
   img.addEventListener('load', () => {
     img.style.display = 'block';
     document.getElementById('photoPlaceholder').style.display = 'none';
